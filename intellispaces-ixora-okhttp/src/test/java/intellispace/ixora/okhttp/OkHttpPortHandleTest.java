@@ -24,5 +24,4 @@ public class OkHttpPortHandleTest extends OutboundHttpPortTest {
     MovableOkHttpPort port = OkHttpPorts.get();
     testHello(port.asOutboundHttpPort());
   }
-
 }
