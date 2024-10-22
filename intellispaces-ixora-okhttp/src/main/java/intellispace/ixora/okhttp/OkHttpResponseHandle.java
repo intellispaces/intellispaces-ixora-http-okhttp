@@ -29,7 +29,7 @@ public abstract class OkHttpResponseHandle implements UnmovableOkHttpResponse {
   @Mapper
   @Override
   public HttpStatus status() {
-    return HttpStatuses.of(response.code());
+    return HttpStatuses.get(response.code());
   }
 
   @MapperOfMoving
