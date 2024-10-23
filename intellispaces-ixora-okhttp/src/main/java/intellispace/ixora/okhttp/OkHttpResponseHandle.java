@@ -26,6 +26,11 @@ public abstract class OkHttpResponseHandle implements UnmovableOkHttpResponse {
     return response;
   }
 
+  @Override
+  public void release() {
+    response.close();
+  }
+
   @Mapper
   @Override
   public HttpStatus status() {
