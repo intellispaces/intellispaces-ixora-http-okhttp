@@ -1,7 +1,6 @@
 package intellispace.ixora.okhttp;
 
-import intellispaces.framework.core.IntellispacesFramework;
-import intellispaces.framework.core.system.Modules;
+import intellispaces.jaquarius.system.Modules;
 import intellispaces.ixora.http.test.OutboundHttpPortTest;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -11,7 +10,7 @@ public class OkHttpPortHandleTest extends OutboundHttpPortTest {
 
   @BeforeEach
   public void init() {
-    IntellispacesFramework.loadModule();
+    Modules.get().start();
   }
 
   @AfterEach

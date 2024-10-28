@@ -1,8 +1,8 @@
 package intellispace.ixora.okhttp;
 
-import intellispaces.framework.core.annotation.Mapper;
-import intellispaces.framework.core.annotation.MapperOfMoving;
-import intellispaces.framework.core.annotation.ObjectHandle;
+import intellispaces.jaquarius.annotation.Mapper;
+import intellispaces.jaquarius.annotation.MapperOfMoving;
+import intellispaces.jaquarius.annotation.ObjectHandle;
 import intellispaces.ixora.data.datastream.ByteStreams;
 import intellispaces.ixora.data.datastream.MovableByteInputStream;
 import intellispaces.ixora.http.HttpStatus;

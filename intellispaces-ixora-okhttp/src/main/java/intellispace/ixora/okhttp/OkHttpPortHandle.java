@@ -1,8 +1,8 @@
 package intellispace.ixora.okhttp;
 
 import intellispaces.common.base.exception.UnexpectedViolationException;
-import intellispaces.framework.core.annotation.MapperOfMoving;
-import intellispaces.framework.core.annotation.ObjectHandle;
+import intellispaces.jaquarius.annotation.MapperOfMoving;
+import intellispaces.jaquarius.annotation.ObjectHandle;
 import intellispaces.ixora.http.HttpMethod;
 import intellispaces.ixora.http.HttpRequest;
 import intellispaces.ixora.http.HttpResponse;

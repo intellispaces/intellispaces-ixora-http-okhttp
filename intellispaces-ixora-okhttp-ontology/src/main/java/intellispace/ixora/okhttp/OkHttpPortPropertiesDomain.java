@@ -1,8 +1,8 @@
 package intellispace.ixora.okhttp;
 
-import intellispaces.framework.core.annotation.Channel;
-import intellispaces.framework.core.annotation.Data;
-import intellispaces.framework.core.annotation.Domain;
+import intellispaces.jaquarius.annotation.Channel;
+import intellispaces.jaquarius.annotation.Data;
+import intellispaces.jaquarius.annotation.Domain;
 
 @Data
 @Domain("5204a412-8e80-4fdf-a349-ccef70c8fe58")
