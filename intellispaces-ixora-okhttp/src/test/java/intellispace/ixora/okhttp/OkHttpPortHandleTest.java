@@ -1,5 +1,6 @@
 package intellispace.ixora.okhttp;
 
+import intellispaces.ixora.http.MovableOutboundHttpPort;
 import intellispaces.jaquarius.system.Modules;
 import intellispaces.ixora.http.test.OutboundHttpPortTest;
 import org.junit.jupiter.api.AfterEach;
@@ -18,9 +19,13 @@ public class OkHttpPortHandleTest extends OutboundHttpPortTest {
     Modules.current().stop();
   }
 
+  @Override
+  protected MovableOutboundHttpPort getPort() {
+    return OkHttpPorts.get().asOutboundHttpPort();
+  }
+
   @Test
   public void testHello() {
-    MovableOkHttpPort port = OkHttpPorts.get();
-    testHello(port.asOutboundHttpPort());
+    super.testHello();
   }
 }

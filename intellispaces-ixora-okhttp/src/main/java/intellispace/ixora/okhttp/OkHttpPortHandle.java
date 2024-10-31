@@ -39,7 +39,7 @@ public abstract class OkHttpPortHandle implements MovableOkHttpPort {
 
   private Request buildRequest(HttpRequest request) {
     Request.Builder reqBuilder = new Request.Builder()
-        .url(request.requestURI());
+        .url(request.requestURI().toString());
     HttpMethod method = request.method();
     if (method.isGet()) {
       reqBuilder = reqBuilder.get();
