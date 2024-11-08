@@ -1,6 +1,7 @@
 package intellispace.ixora.okhttp;
 
-import intellispaces.common.base.exception.UnexpectedViolationException;
+import intellispaces.common.base.exception.UnexpectedExceptions;
+import intellispaces.ixora.http.exception.HttpExceptions;
 import intellispaces.jaquarius.annotation.MapperOfMoving;
 import intellispaces.jaquarius.annotation.ObjectHandle;
 import intellispaces.ixora.http.HttpMethod;
@@ -33,7 +34,7 @@ public abstract class OkHttpPortHandle implements MovableOkHttpPort {
       Response res = client.newCall(req).execute();
       return OkHttpResponses.get(res).asHttpResponse();
     } catch (IOException e) {
-      throw HttpException.withCauseAndMessage(e, "Could not call HTTP server");
+      throw HttpExceptions.withCauseAndMessage(e, "Could not call HTTP server");
     }
   }
 
@@ -44,7 +45,7 @@ public abstract class OkHttpPortHandle implements MovableOkHttpPort {
     if (method.isGet()) {
       reqBuilder = reqBuilder.get();
     } else {
-      throw UnexpectedViolationException.withMessage("Unsupported HTTP method: {}", method.name());
+      throw UnexpectedExceptions.withMessage("Unsupported HTTP method: {}", method.name());
     }
     return reqBuilder.build();
   }
