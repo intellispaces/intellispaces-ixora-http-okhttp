@@ -1,8 +1,8 @@
 package intellispace.ixora.okhttp;
 
+import intellispaces.ixora.http.OutboundHttpPortDomain;
 import intellispaces.jaquarius.annotation.Channel;
 import intellispaces.jaquarius.annotation.Domain;
-import intellispaces.ixora.http.OutboundHttpPortDomain;
 
 @Domain("6ac6a0f8-9909-46f4-aeb2-4ef8e1c46c62")
 public interface OkHttpPortDomain extends OutboundHttpPortDomain {

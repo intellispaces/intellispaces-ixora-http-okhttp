@@ -1,8 +1,8 @@
 package intellispace.ixora.okhttp;
 
 import intellispaces.ixora.http.MovableOutboundHttpPort;
-import intellispaces.jaquarius.system.Modules;
 import intellispaces.ixora.http.test.OutboundHttpPortTest;
+import intellispaces.jaquarius.system.Modules;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

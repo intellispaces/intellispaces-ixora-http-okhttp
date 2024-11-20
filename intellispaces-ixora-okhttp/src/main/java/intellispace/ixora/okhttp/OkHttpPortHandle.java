@@ -1,16 +1,16 @@
 package intellispace.ixora.okhttp;
 
-import intellispaces.common.base.exception.UnexpectedExceptions;
-import intellispaces.ixora.http.exception.HttpExceptions;
-import intellispaces.jaquarius.annotation.MapperOfMoving;
-import intellispaces.jaquarius.annotation.ObjectHandle;
 import intellispaces.ixora.http.HttpMethod;
 import intellispaces.ixora.http.HttpRequest;
 import intellispaces.ixora.http.HttpResponse;
 import intellispaces.ixora.http.exception.HttpException;
+import intellispaces.ixora.http.exception.HttpExceptions;
+import intellispaces.jaquarius.annotation.MapperOfMoving;
+import intellispaces.jaquarius.annotation.ObjectHandle;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
+import tech.intellispaces.entity.exception.UnexpectedExceptions;
 
 import java.io.IOException;
 
