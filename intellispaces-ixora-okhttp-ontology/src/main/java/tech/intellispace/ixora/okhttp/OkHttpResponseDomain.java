@@ -1,8 +1,8 @@
-package intellispace.ixora.okhttp;
+package tech.intellispace.ixora.okhttp;
 
-import intellispaces.ixora.http.HttpResponseDomain;
-import intellispaces.jaquarius.annotation.Channel;
-import intellispaces.jaquarius.annotation.Domain;
+import tech.intellispaces.ixora.http.HttpResponseDomain;
+import tech.intellispaces.jaquarius.annotation.Channel;
+import tech.intellispaces.jaquarius.annotation.Domain;
 
 @Domain("3cd2df0d-a248-408f-9c39-5cee9d504415")
 public interface OkHttpResponseDomain extends HttpResponseDomain {

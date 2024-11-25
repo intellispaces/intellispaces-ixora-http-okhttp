@@ -1,4 +1,4 @@
-package intellispace.ixora.okhttp;
+package tech.intellispace.ixora.okhttp;
 
 import okhttp3.OkHttpClient;
 
