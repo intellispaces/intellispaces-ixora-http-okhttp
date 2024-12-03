@@ -10,7 +10,7 @@ import tech.intellispaces.jaquarius.annotation.ObjectHandle;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-import tech.intellispaces.entity.exception.UnexpectedExceptions;
+import tech.intellispaces.general.exception.UnexpectedExceptions;
 
 import java.io.IOException;
 
